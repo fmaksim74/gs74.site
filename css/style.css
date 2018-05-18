@@ -69,6 +69,7 @@
 }
 .slide-container img {
   max-height: 100%;
+  max-width: 40%;
   height: auto;
   width: auto;
   float: left;
