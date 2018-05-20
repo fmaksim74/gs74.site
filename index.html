@@ -10,20 +10,23 @@
     <script src="js/script.js" type="text/javascript"></script>
     <title>GreenStar - Разработка конструкторской документации.</title>
   </head>
-  <body onload="cycleSlides()">
+<!--  <body onload="cycleSlides()"> -->
+  <body>
   <body>
     <div id="header">
-      <a href="#" style="font-weight: bold; padding-left: 2vw;">
-        <p style="font-size: 3vw;"><span style="color: #00FF00;">Green</span><span style="color: #0099CC">Star</span><br /><span style="font-size: 1.5vw">Конструкторское бюро</span></p>
+      <a href="#" id="logo-link">
+        <p><span id="first-logo-word">Green</span><span id="second-logo-word">Star</span><br /><span id="logo-underline-text">Конструкторское бюро</span></p>
       </a>
       <div id="header-middle">
-        <p>Россия, г.Челябинск, ул.Воровского 13 б, оф. 61</p>
-        <table>
-          <tr><th>&#128224;</th><td>8 (351) 262&#8210;58&#8210;50</td></tr>
-          <tr><th>&#128224;</th><td>8 (351) 729&#8210;38&#8210;37</td></tr>
-          <tr><th>&#9742;</th><td>8 919 341&#8210;08&#8210;14</td></tr>
-        </table>
-        <a href="mailto:72938377@mail.ru">&#128231; 72938377&#64;mail.ru</a><a href="mailto:2625850@mail.ru">&#128231; 2625850&#64;mail.ru</a>
+        <div>
+          <p>Россия, г.Челябинск, ул.Воровского 13 б, оф. 61</p>
+          <table>
+            <tr><th>&#128224;</th><td>8 (351) 262&#8210;58&#8210;50</td></tr>
+            <tr><th>&#128224;</th><td>8 (351) 729&#8210;38&#8210;37</td></tr>
+            <tr><th>&#9742;</th><td>8 919 341&#8210;08&#8210;14</td></tr>
+          </table><br />
+          <a href="mailto:72938377@mail.ru">&#128231; 72938377&#64;mail.ru</a><a href="mailto:2625850@mail.ru">&#128231; 2625850&#64;mail.ru</a>
+        </div>
       </div>
       <div id="header-right">
         <a href="#">Главная</a>
@@ -34,121 +37,134 @@
     <div id="slider">
       <div id="slider-box">
         <div id="slide1" class="slide-container slide-fade">
-          <img src="images/greider.png">
-          <div class="slide-text"><b>Грейдер</b></div>
+          <div class="slide-content">
+            <div class="slide-text" style="font-size: 1em;"><b>Грейдер</b></div>
+            <img class="slide-image" src="images/greider.png">
+          </div>
         </div>
         <div id="slide2" class="slide-container slide-fade">
-          <img src="images/track-wheel-wash.png">
-          <div class="slide-text">
-            <p><b>Мойка колес грузового транспорта</b></p>
-            <table style="padding-left: 25px;">
-              <tr><td>Максимальная ширина автомобиля</td><td>2600 мм</td></tr>
-              <tr><td>Максимальная масса автомобиля</td><td>30 т</td></tr>
-              <tr><td>Способ включения</td><td>автоматический</td></tr>
-              <tr><td>Система очистки</td><td>отстойник с фильтром</td></tr>
-              <tr><td>Способ удаления грязи из отстойника</td><td>дренажный насос с барботажной системой</td></tr>
-            </table>
+          <div class="slide-content">
+            <img class="slide-image" src="images/track-wheel-wash.png" style="height: 60%;">
+            <div class="slide-text">
+              <p><b>Мойка колес грузового транспорта</b></p>
+              <table style="padding-left: 0.5vw; text-align: left;">
+                <tr><td>Максимальная ширина автомобиля</td><td>2600 мм</td></tr>
+                <tr><td>Максимальная масса автомобиля</td><td>30 т</td></tr>
+                <tr><td>Способ включения</td><td>автоматический</td></tr>
+                <tr><td>Система очистки</td><td>отстойник с фильтром</td></tr>
+                <tr><td>Способ удаления грязи из отстойника</td><td>дренажный насос с барботажной системой</td></tr>
+              </table>
+            </div>
           </div>
         </div>
         <div id="slide3" class="slide-container slide-fade">
-          <img src="images/flour-sifter.png">
-          <div class="slide-text">
-            <p><b>Мукопросеиватель</b> вибрационный - предназначен для механизации процесса просеивания, рыхленияб аэрации просеиваемого сырья, отделения механических примесей.</p>
-            <table style="padding-left: 25px;">
-              <tr><td>Ёмкость бункера</td><td>5 л</td></tr>
-              <tr><td>Производительность</td><td>150 кг/ч</td></tr>
-              <tr><th>Габаритные размеры</th><td></td></tr>
-              <tr><td>Длина</td><td>650 мм</td></tr>
-              <tr><td>Ширина</td><td>500 мм</td></tr>
-              <tr><td>Высота</td><td>740 мм</td></tr>
-              <tr><td>Масса</td><td>30 кг</td></tr>
-            </table>
+          <div class="slide-content">
+            <img class="slide-image " src="images/flour-sifter.png">
+            <div class="slide-text ">
+              <p><b>Мукопросеиватель</b> вибрационный - предназначен для механизации процесса просеивания, рыхленияб аэрации просеиваемого сырья, отделения механических примесей.</p>
+              <table style="padding-left: 25px; text-align: left;">
+                <tr><td>Ёмкость бункера</td><td>5 л</td></tr>
+                <tr><td>Производительность</td><td>150 кг/ч</td></tr>
+                <tr><th>Габаритные размеры</th><td></td></tr>
+                <tr><td>Длина</td><td>650 мм</td></tr>
+                <tr><td>Ширина</td><td>500 мм</td></tr>
+                <tr><td>Высота</td><td>740 мм</td></tr>
+                <tr><td>Масса</td><td>30 кг</td></tr>
+              </table>
+            </div>
           </div>
         </div>
         <div id="slide4" class="slide-container slide-fade">
-          <img src="images/forklift.png">
-          <div class="slide-text">
-            <p><b>Вилочный погрузчик</b> - вид специального складского напольного транспорта, предназначенный для поднятия, перемещения, разгрузки, погрузки, складирования (штабелирования) палетов, поддонов.</p>
-            <table style="padding-left: 25px;">
-              <tr><td>Грузоподъёмность</td><td>до 1000 кг</td></tr>
-              <tr><th>Батарея</th><td></td></tr>
-              <tr><td style="text-align: right;">тип</td><td>кислотная</td></tr>
-              <tr><td style="text-align: right;">V<sub>пит</sub></td><td>40 В</td></tr>
-              <tr><td style="text-align: right;">ёмкость</td><td>до 500 Ач</td></tr>
-              <tr><th>Габаритные размеры</th><td></td></tr>
-              <tr><td>Длина</td><td>2600 мм</td></tr>
-              <tr><td>Ширина</td><td>1030 мм</td></tr>
-              <tr><td>Высота</td><td>2800 мм</td></tr>
-              <tr><td>Масса</td><td>2600 кг</td></tr>
-            </table>
+          <div class="slide-content">
+            <img class="slide-image" src="images/forklift.png">
+            <div class="slide-text">
+              <p><b>Вилочный погрузчик</b> - вид специального складского напольного транспорта, предназначенный для поднятия, перемещения, разгрузки, погрузки, складирования (штабелирования) палетов, поддонов.</p>
+              <table style="padding-left: 25px; text-align: left;">
+                <tr><td>Грузоподъёмность</td><td>до 1000 кг</td></tr>
+                <tr><th>Батарея</th><td></td></tr>
+                <tr><td style="text-align: right;">тип</td><td>кислотная</td></tr>
+                <tr><td style="text-align: right;">V<sub>пит</sub></td><td>40 В</td></tr>
+                <tr><td style="text-align: right;">ёмкость</td><td>до 500 Ач</td></tr>
+                <tr><th>Габаритные размеры</th><td></td></tr>
+                <tr><td>Длина</td><td>2600 мм</td></tr>
+                <tr><td>Ширина</td><td>1030 мм</td></tr>
+                <tr><td>Высота</td><td>2800 мм</td></tr>
+                <tr><td>Масса</td><td>2600 кг</td></tr>
+              </table>
+            </div>
           </div>
         </div>
         <div id="slide5" class="slide-container slide-fade">
-          <img src="images/mixer.png">
-          <div class="slide-text"><b>Смеситель</b></div>
+          <div class="slide-content">
+            <div class="slide-text"><b>Смеситель</b></div>
+            <img class="slide-image" src="images/mixer.png">
+          </div>
         </div>
         <div id="slide6" class="slide-container slide-fade">
-          <img src="images/potato-cleaner.png">
-          <div class="slide-text"><p><b>Картофелечистка</b> - предназначен для быстрой и деликатной очистки картофеля и других корнеплодов от кожуры.</p>
-            <table style="padding-left: 25px;">
-              <tr><td>Ёмкость бункера</td><td>25 л</td></tr>
-              <tr><td>Максимальный объём загрузки</td><td>5 л</td></tr>
-              <tr><td>Производительность</td><td>100 кг/ч</td></tr>
-              <tr><th>Габаритные размеры</th><td></td></tr>
-              <tr><td>Длина</td><td>560 мм</td></tr>
-              <tr><td>Ширина</td><td>350 мм</td></tr>
-              <tr><td>Высота</td><td>840 мм</td></tr>
-              <tr><td>Масса</td><td>45 кг</td></tr>
-            </table>
+          <div class="slide-content">
+            <img class="slide-image" src="images/potato-cleaner.png">
+            <div class="slide-text"><p><b>Картофелечистка</b> - предназначен для быстрой и деликатной очистки картофеля и других корнеплодов от кожуры.</p>
+              <table style="padding-left: 25px; text-align: left;">
+                <tr><td>Ёмкость бункера</td><td>25 л</td></tr>
+                <tr><td>Максимальный объём загрузки</td><td>5 л</td></tr>
+                <tr><td>Производительность</td><td>100 кг/ч</td></tr>
+                <tr><th>Габаритные размеры</th><td></td></tr>
+                <tr><td>Длина</td><td>560 мм</td></tr>
+                <tr><td>Ширина</td><td>350 мм</td></tr>
+                <tr><td>Высота</td><td>840 мм</td></tr>
+                <tr><td>Масса</td><td>45 кг</td></tr>
+              </table>
+            </div>
           </div>
         </div>
         <div id="slide7" class="slide-container slide-fade">
-          <img src="images/prokat-stan.png">
-          <div class="slide-text"><b>Прокатный стан</b></div>
+          <div class="slide-content">
+            <div class="slide-text"><b>Прокатный стан</b></div>
+            <img class="slide-image" src="images/prokat-stan.png">
+          </div>
         </div>
         <div id="slide8" class="slide-container slide-fade">
-          <img src="images/pumping-station.png">
-          <div class="slide-text"><p><b>Установка насосная цементировочная</b> - предназначена для цементирования скважин, опрессовки и проведения промывочно-продавочных  работ на нефтяных и газовых скважинах.</p>
-            <table style="padding-left: 25px;">
-              <tr><th>Насос НЦ-320</th><td></td></tr>
-              <tr><td>Мощность</td><td>100 КВт</td></tr>
-              <tr><td>Предельное давление</td><td>40 МПа</td></tr>
-              <tr><td>Водоподающий блок</td><td></td></tr>
-              <tr><td style="text-align: right;">двигатель</td><td>ЗМЗ-511</td></tr>
-              <tr><td style="text-align: right;">мощность</td><td>92 КВт</td></tr>
-              <tr><td>Центробежный насос</td><td>манифольд</td></tr>
-              <tr><th>Габаритные размеры</th><td></td></tr>
-              <tr><td>Длина</td><td>9300 мм</td></tr>
-              <tr><td>Ширина</td><td>2700 мм</td></tr>
-              <tr><td>Высота</td><td>3200 мм</td></tr>
-              <tr><td>Масса</td><td>16 т</td></tr>
-              <tr><td>На базе автомобиля</td><td>КамАЗ</td></tr>
-            </table>
+          <div class="slide-content">
+            <img class="slide-image" src="images/pumping-station.png">
+            <div class="slide-text"><p><b>Установка насосная цементировочная</b> - предназначена для цементирования скважин, опрессовки и проведения промывочно-продавочных  работ на нефтяных и газовых скважинах.</p>
+              <table style="padding-left: 25px; text-align: left;">
+                <tr><th>Насос НЦ-320</th><td></td></tr>
+                <tr><td>Мощность</td><td>100 КВт</td></tr>
+                <tr><td>Предельное давление</td><td>40 МПа</td></tr>
+                <tr><td>Водоподающий блок</td><td></td></tr>
+                <tr><td style="text-align: right;">двигатель</td><td>ЗМЗ-511</td></tr>
+                <tr><td style="text-align: right;">мощность</td><td>92 КВт</td></tr>
+                <tr><td>Центробежный насос</td><td>манифольд</td></tr>
+                <tr><th>Габаритные размеры</th><td></td></tr>
+                <tr><td>Длина</td><td>9300 мм</td></tr>
+                <tr><td>Ширина</td><td>2700 мм</td></tr>
+                <tr><td>Высота</td><td>3200 мм</td></tr>
+                <tr><td>Масса</td><td>16 т</td></tr>
+                <tr><td>На базе автомобиля</td><td>КамАЗ</td></tr>
+              </table>
+            </div>
           </div>
         </div>
         <div id="slide9" class="slide-container slide-fade">
-          <img src="images/stacker.png">
-          <div class="slide-text"><b>Штабелёр</b></div>
+          <div class="slide-content">
+            <div class="slide-text"><b>Штабелёр</b></div>
+            <img class="slide-image" src="images/stacker.png">
+          </div>
         </div>
         <div id="slide10" class="slide-container slide-fade">
-          <img src="images/var-dev.png">
-          <div class="slide-text"><b>Оборудование для пищевой промышленности</b></div>
+          <div class="slide-content">
+            <div class="slide-text"><b>Оборудование для пищевой промышленности</b></div>
+            <img class="slide-image" src="images/var-dev.png">
+          </div>
         </div>
         <div id="slide11" class="slide-container slide-fade">
-          <img src="images/stend1.png">
-          <div class="slide-text"><b>Стенд 1</b></div>
-        </div>
-        <div id="slide12" class="slide-container slide-fade">
-          <img src="images/stend2.png">
-          <div class="slide-text"><b>Стенд 2</b></div>
-        </div>
-        <div id="slide13" class="slide-container slide-fade">
-          <img src="images/stend3.png">
-          <div class="slide-text"><b>Стенд 3</b></div>
-        </div>
-        <div id="slide14" class="slide-container slide-fade">
-          <img src="images/stend4.png">
-          <div class="slide-text"><b>Стенд 4</b></div>
+          <div class="slide-content">
+            <div class="slide-text"><b>Стенд 1</b></div>
+            <img class="slide-image" src="images/stend1.png">
+            <img class="slide-image" src="images/stend2.png">
+            <img class="slide-image" src="images/stend3.png">
+            <img class="slide-image" src="images/stend4.png">
+          </div>
         </div>
         <a id="slide-prev" onclick="plusSlides(-1)">&#10094</a>
         <a id="slide-next" onclick="plusSlides(1)">&#10095</a>
@@ -165,9 +181,6 @@
         <span class="slide-dot" onclick="currentSlide(9)"></span>
         <span class="slide-dot" onclick="currentSlide(10)"></span>
         <span class="slide-dot" onclick="currentSlide(11)"></span>
-        <span class="slide-dot" onclick="currentSlide(12)"></span>
-        <span class="slide-dot" onclick="currentSlide(13)"></span>
-        <span class="slide-dot" onclick="currentSlide(14)"></span>
       </div>
     </div> 
     <div id="content">
@@ -179,7 +192,7 @@
           <li><b>для металлургии</b> – смесители, бункеры, емкости.</li>
         </ul>
       <p>Оборудование <b>для пищевой промышленности</b></p>
-      <p style="font-weight: bold; text-align: center;">Возможно проектирование другого оборудования и механизмов по техническому заданию и эскизам заказчика.</p>
+      <p style="font-weight: bold; text-align: center; margin-bottom: 3em;">Возможно проектирование другого оборудования и механизмов по техническому заданию и эскизам заказчика.</p>
     <div id="footer">
       <p>Copyright &copy; GreenStar 2005-2018. Все права защищены.</p>
     </div>
