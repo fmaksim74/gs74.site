@@ -1,203 +1,61 @@
 /* Common definitions */
-* {
-  color: black;   
-  margin: 0px;
-  padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
+* { color: black; margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
+body { display: flex; flex-direction: column;}
 
 /* Header definitions */
-#header {
-  overflow: hidden;
-  font-weight: bold; 
-}
-#logo-link {
-  border-radius: 0.2em;
-  float: left;
-  padding-left: 1em;
-  text-align: center;
-  text-decoration: none;
-}
-#first-logo-word, #second-logo-word {
-  font-size: 3em;
-}
-#first-logo-word {
-  color: #00FF00;
-}
-#second-logo-word {
-  color: #0099CC;
-}
-#logo-underline-text {
-  font-size: 1.5em;
-}
-#header-middle {
-  text-align: center;
-}
-#header-middle div {
-  display: inline-block;
-  font-size: 0.8em;
-  float: left;
-  margin: 0 5vw;
-}
-#header-middle a {
-  display: inline-block;
-  font-size: 1em;
-  padding: 0.5em;
-  text-decoration: none;
-}
-#header-middle table {
-  display: inline-block;
-}
-#header-middle th {
-  text-align: right;
-}
-#header-middle td {
-  padding-left: 10px;
-}
-#header-right {
-  float: right;
-  display: none;
-}
-#header-right a {
-  padding: 12px;
-}
-#header a:hover {
-  background-color: #DDD;
-}
-#header-right a.active {
-  background-color: #0099CC;
-}
+#header { overflow: hidden; font-weight: bold; }
+#logo-link { border-radius: 0.2em; float: left; padding-left: 1em; text-align: center; text-decoration: none;}
+#first-logo-word, #second-logo-word { font-size: 4em;}
+#first-logo-word { color: #00FF00;}
+#second-logo-word { color: #0099CC;}
+#logo-underline-text { font-size: 2.5em;}
+#header-middle { text-align: center;}
+#header-middle div { display: inline-block; font-size: 1.0em; float: left; margin: 0 5vw;}
+#header-middle a { display: inline-block; font-size: 1em; padding: 0.5em; text-decoration: none;}
+#header-middle table { display: inline-block;}
+#header-middle th { text-align: right;}
+#header-middle td { padding-left: 10px; text-align: left;}
+#header-right { float: right; display: none;}
+#header-right a { padding: 12px;}
+#header a:hover { background-color: #DDD;}
+#header-right a.active { background-color: #0099CC;}
+.inside-body { width: 100%;}
 
 /* Slider definitions */
-#slider {
-  height: 40vw;
-  width: 100vw;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-#slider-box {
-  height: 40vw;
-  overflow: hidden;
-  position: relative;
-}
-.slide-container {
-  height: 100%;
-  overflow: hidden;
-  display: none;
-/*  margin-left: 3%;*/
-  text-align: center;
-}
-.slide-content {
-  display: inline-block;
-  height: 100%;
-/*  margin: 0 2em 0 2em;*/
-}
-.slide-image {
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-}
-.slide-text {
-  font-size: 1.5vw;
-  text-align: justify;
-}
-.slide-text th,.slide-text td {
-  padding: 0px 10px 0px 10px;
-}
-#slide-prev, #slide-next {
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  width: auto;
-  font-weight: bold;
-  font-size: 1em;
-  padding: 1em;
-  transition: 0.6s ease;
-  border-radius: 1em;
-}
-#slide-next {
-  right: 0vw;
-/*  border-radius: 3px 0 0 3px;*/
-}
-#slide-prev:hover, #slide-next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.slide-dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 2px;
-  background-color: #0099CC;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-.active, .slide-dot:hover {
-  background-color: #00FF00;
-}
-.slide-fade {
-  -webkit-animation-name: slide-fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: slide-fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes slide-fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
-}
-@keyframes slide-fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+#slider { height: 400px; margin-top: 2em; margin-bottom: 1em;}
+#slider-box { height: 400px; overflow: hidden; position: relative;}
+.slide-container { height: 100%; overflow: hidden; display: none; /*  margin-left: 3%;*/ text-align: center;}
+.slide-content { display: inline-block; height: 100%;/*  margin: 0 2em 0 2em;*/}
+.slide-image { max-height: 60%; max-width: 100%; height: auto; width: auto;}
+.slide-text { max-width: 80%; text-align: justify; margin: auto}
+.slide-text table { padding-left: 0.5vw; text-align: left; font-size: 1em;}
+.slide-text th,.slide-text td { padding: 0px 10px 0px 10px;}
+#slide-prev, #slide-next { cursor: pointer; position: absolute; top: 45%; width: auto; font-weight: bold; font-size: 1em; padding: 1em; transition: 0.6s ease; border-radius: 1em;}
+#slide-next { right: 0vw;/*  border-radius: 3px 0 0 3px;*/}
+#slide-prev:hover, #slide-next:hover { background-color: rgba(0,0,0,0.8);}
+.slide-dot { cursor: pointer; height: 15px; width: 15px; margin: 2px; background-color: #0099CC; border-radius: 50%; display: inline-block; transition: background-color 0.5s ease;}
+.active, .slide-dot:hover { background-color: #00FF00;}
+.slide-fade { -webkit-animation-name: slide-fade; -webkit-animation-duration: 1.5s; animation-name: slide-fade; animation-duration: 1.5s;}
+@-webkit-keyframes slide-fade { from {opacity: 0.4} to {opacity: 1}}
+@keyframes slide-fade { from {opacity: .4} to {opacity: 1}}
+
 /* Content definitions */
-#content {
-  clear: both;
-  width: 100vw;
-}
-#content p {
-  padding-left: 2vw;
-  padding-top: 2vw;
-}
-#content ul {
-  padding-left: 4vw;
-}
-#footer {
-/*  position: fixed;
-  left: 0;
-  bottom: 0;*/
-  width: 100vw;
-  background-color: #0099CC;
-  text-align: center;
-}
-#footer p {
-  font-size: 0.8em;
-  font-weight: bold;
-  padding: 0.5em;
-  display: inline-block;
-}
-vim change cursor xterm
+#content { clear: both; font-size: 1.5em;}
+#content p { padding-left: 2vw; padding-top: 2vw;}
+#content ul { padding-left: 4vw;}
+#footer { position: fixed; left: 0; bottom: 0; background-color: #0099CC; text-align: center;}
+#footer p { font-size: 0.9em; font-weight: bold; padding: 0.5em; display: inline-block;}
+
 @media only screen and (max-width: 675px) {
-  #logo-link, #header-middle {  
-    float:none;
-  }
-  #header-middle {
-    width: 100vw;
-  }
-  #header-middle div {
-    float: none;
-    margin-top: 1em;
-  }
+  #logo-link, #header-middle { float:none;}
+  #header-middle { width: 100%; }
+  #header-middle div { float: none; margin-top: 1em;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) 
 @media only screen and (min-width: 600px) {
   #header {
     float: none;
-    
   }
 }
 
@@ -210,9 +68,9 @@ vim change cursor xterm
 
 /* Large devices (laptops/desktops, 992px and up) 
 @media only screen and (min-width: 992px) {
-}
+}*/
 
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1024px) {
+  body { width: 1024px; margin-left: auto; margin-right: auto;
+  }
 } 
