@@ -46,6 +46,16 @@ body { display: flex; flex-direction: column;}
 #footer { position: fixed; left: 0; bottom: 0; background-color: #0099CC; text-align: center;}
 #footer p { font-size: 0.9em; font-weight: bold; padding: 0.5em; display: inline-block;}
 
+
+.img4 { max-height: 50%; }
+.img8 { max-height: 40%; }
+.img11 { max-height: 45%; }
+@media only screen and (max-width: 536px) {
+  .img4 { max-height: 45%; }
+  .img8 { max-height: 35%; }
+  .img11 { max-height: 25%; }
+}
+
 @media only screen and (max-width: 675px) {
   #logo-link, #header-middle { float:none;}
   #header-middle { width: 100%; }
