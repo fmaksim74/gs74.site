@@ -40,11 +40,11 @@ body { display: flex; flex-direction: column;}
 @keyframes slide-fade { from {opacity: .4} to {opacity: 1}}
 
 /* Content definitions */
-#content { clear: both; font-size: 1.5em;}
+#content { clear: both; font-size: 1.0em;}
 #content p { padding-left: 2vw; padding-top: 2vw;}
 #content ul { padding-left: 4vw;}
 #footer { position: fixed; left: 0; bottom: 0; background-color: #0099CC; text-align: center;}
-#footer p { font-size: 0.9em; font-weight: bold; padding: 0.5em; display: inline-block;}
+#footer p { font-size: 0.6em; font-weight: bold; padding: 0.5em; display: inline-block;}
 
 
 .img4 { max-height: 50%; }
